@@ -24,6 +24,9 @@ class GameCharacter {
     }
 
     public void attack(GameCharacter target){
+        System.out.println(getName() + " attacks " + target.getName() + "with a basic attack");
+        target.setHealth(target.getHealth() - 10);
+        System.out.println(target.getName() + " health now " + target.getHealth());
 
     }
 }
