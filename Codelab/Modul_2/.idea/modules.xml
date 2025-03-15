@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CodeLab1/CodeLab1.iml" filepath="$PROJECT_DIR$/CodeLab1/CodeLab1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLab2/CodeLab2.iml" filepath="$PROJECT_DIR$/CodeLab2/CodeLab2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Modul_2.iml" filepath="$PROJECT_DIR$/.idea/Modul_2.iml" />
+    </modules>
+  </component>
+</project>
