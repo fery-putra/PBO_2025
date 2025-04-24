@@ -3,7 +3,7 @@ class Admin extends User{
     private final String username;
     private final String password;
 
-    public Admin(String name, int nim, String username, String password) {
+    public Admin(String name, String nim, String username, String password) {
         super(name, nim);
         this.username = username;
         this.password = password;
@@ -11,10 +11,6 @@ class Admin extends User{
 
 
     @Override
-    public boolean login(String inputName, int inputNim){
-        return false;
-
-    }
 
     public boolean login(String inputUsername, String inputPassword) {
         return inputUsername.equals(this.username) && inputPassword.equals(this.password);

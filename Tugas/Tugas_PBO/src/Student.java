@@ -1,12 +1,12 @@
 class Student extends User {
-    public Student(String name, int nim){
+    public Student(String name, String nim){
         super(name, nim);
     }
 
 
     @Override
-    public boolean login(String InputName, int InputNim){
-        return InputName.equals(getName()) && InputNim == getNim();
+    public boolean login(String InputName, String InputNim){
+        return InputName.equals(getName()) && InputNim.equals(getNim());
     }
 
 
@@ -17,3 +17,4 @@ class Student extends User {
         System.out.println(" Student NIM : " +getNim());
     }
 }
+

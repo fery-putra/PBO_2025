@@ -1,8 +1,8 @@
-abstract class User {
+ class User {
     private String name;
-    private int nim;
+    private String nim;
 
-    public User(String name, int nim) {
+    public User(String name, String nim) {
         this.name = name;
         this.nim = nim;
     }
@@ -15,15 +15,17 @@ abstract class User {
         return name;
     }
 
-    public void setNim(int nim){
+    public void setNim(String nim){
         this.nim = nim;
     }
 
-    public int getNim(){
+    public String getNim(){
         return nim;
     }
 
-    public abstract boolean login(String InputName, int InputNIM);
+    public boolean login(String InputName, String InputNIM){
+        return InputName.equals(this.name) && InputNIM.equals(this.nim);
+    }
 
     public void displayInfo(){
         System.out.println(" User Info : ");

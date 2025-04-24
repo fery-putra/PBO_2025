@@ -5,8 +5,8 @@ public class LoginSystem {
 
         Scanner sc = new Scanner(System.in);
 
-        Admin admin = new Admin("Fery", 8560013, "Admin013", "password013");
-        Student student = new Student("Fery",8560013);
+        Admin admin = new Admin("Fery", "08560013", "Admin013", "password013");
+        Student student = new Student("Fery","08560013");
 
         System.out.println("Choose login access :");
         System.out.println("1. Admin");
@@ -33,7 +33,7 @@ public class LoginSystem {
                 System.out.println("Enter Name : ");
                 String name = sc.nextLine();
                 System.out.println("Enter NIM : ");
-                int nim = sc.nextInt();
+                String nim = sc.nextLine();
 
                 if(student.login(name,nim)) {
                     student.displayInfo();
@@ -50,4 +50,5 @@ public class LoginSystem {
 
     }
 }
+
 
